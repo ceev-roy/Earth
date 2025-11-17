@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Earth Cnages over time</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 0;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .custom-navbar {
+      background-color: #1a2a4b;
+      padding: 10px 0;
+    }
+
+    .custom-navbar .navbar-brand,
+    .custom-navbar .nav-link {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    .custom-navbar .nav-link.active {
+      color: #ffffff;
+      font-weight: bold;
+      border-bottom: 3px solid #ff6600;
+      padding-bottom: 5px;
+      margin-bottom: -3px;
+    }
+
+    .cover-box {
+      background-color: #f3f4f6;
+      height: 230px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      color: #495057;
+      border-radius: 0.3rem;
+    }
+
+    .box {
+      max-width: 1200px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Earth's Changes Over Time</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Unit Introduction</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex ms-auto">
+        <button class="btn btn-sm text-white-50" type="button" aria-label="Toggle Fullscreen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.146 10.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L2.707 9H6.5a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.354-.146zm8.146-8.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L13.293 7H9.5a.5.5 0 0 1 0-1h4.499a.5.5 0 0 1 .354.146z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container bg-white p-4 p-md-5 topic-selection-box mx-auto">
+    <div class="mb-2">
+      <p class="small fw-bold text-warning mb-1" style="color: #ff6600 !important; letter-spacing: 0.1em;">INDEPENDENT
+        READING</p>
+      <h2 class="display-6 fw-bolder text-dark">Choose a Topic!</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-12 col-md-4">
+        <div class="form-check d-flex align-items-center mb-2">
+          <input class="form-check-input me-2" type="checkbox" value="" id="wondersCheckbox" data-color="blue">
+          <label class="form-check-label fw-bold text-dark fs-5" for="wondersCheckbox">
+            Natural Wonders
+          </label>
+        </div>
+
+        <div id="wonders-image" class="image-wrapper mb-2">
+          <img src="./water.webp" alt="A deep underwater view of coral or rocks." class="img-fluid rounded-0">
+        </div>
+
+        <p class="fw-semibold text-dark mb-4" style="font-size: 1rem;">Is Earth's tallest mountain at the bottom of the
+          ocean?</p>
+
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="form-check d-flex align-items-center mb-2">
+          <input class="form-check-input me-2" type="checkbox" value="" id="mysteriesCheckbox" data-color="red">
+          <label class="form-check-label fw-bold text-dark fs-5" for="mysteriesCheckbox">
+            Natural Mysteries
+          </label>
+        </div>
+
+        <div id="mysteries-image" class="image-wrapper mb-2">
+          <img src="./fossil.webp" alt="A close-up of a fossil embedded in rock." class="img-fluid rounded-0">
+        </div>
+
+        <p class="fw-semibold text-dark mb-4" style="font-size: 1rem;">Can these fossils unlock mysteries from the past?
+        </p>
+
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="form-check d-flex align-items-center mb-2">
+          <input class="form-check-input me-2" type="checkbox" value="" id="hazardsCheckbox" data-color="magenta">
+          <label class="form-check-label fw-bold text-dark fs-5" for="hazardsCheckbox">
+            Natural Hazards
+          </label>
+        </div>
+
+        <div id="hazards-image" class="image-wrapper mb-2">
+          <img src="./crack.webp" alt="A large crack in dry earth, possibly caused by an earthquake."
+            class="img-fluid rounded-0">
+        </div>
+
+        <p class="fw-semibold text-dark mb-4" style="font-size: 1rem;">Is Earth's tallest mountain at the bottom of the
+          ocean?</p>
+      </div>
+
+
+      <div class="box my-1">
+        <div class="row g-3">
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="cover-box">COVER</div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="cover-box">COVER</div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="cover-box">COVER</div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="cover-box">COVER</div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="cover-box">COVER</div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="cover-box">COVER</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

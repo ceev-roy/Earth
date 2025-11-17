@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Earth Changes over time</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 0;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .custom-navbar {
+      background-color: #1a2a4b;
+      padding: 10px 0;
+    }
+
+    .custom-navbar .navbar-brand,
+    .custom-navbar .nav-link {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+
+    .custom-navbar .nav-link.active {
+      color: #ffffff;
+      font-weight: bold;
+      border-bottom: 3px solid #ff6600;
+      padding-bottom: 5px;
+      margin-bottom: -3px;
+    }
+
+    .hero-background {
+      background-image: url('https://placehold.co/1920x600/003366/87CEEB?text=Blue+Planet+Earth+from+Space');
+      background-size: cover;
+      background-position: center top;
+      height: 300px;
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 0.15rem;
+    }
+
+    .text-overlay {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 40%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.1) 85%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .text-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .card-container-wrapper {
+      margin-top: -80px;
+      padding-bottom: 40px;
+    }
+
+    .main-content-wrapper {
+      max-width: 90%;
+      padding: 0;
+      margin: 0 auto 20px auto;
+      background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Earth's Changes Over Time</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Unit Introduction</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex ms-auto">
+        <button class="btn btn-sm text-white-50" type="button" aria-label="Toggle Fullscreen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.146 10.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L2.707 9H6.5a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.354-.146zm8.146-8.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L13.293 7H9.5a.5.5 0 0 1 0-1h4.499a.5.5 0 0 1 .354.146z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-content-wrapper border border-secondary rounded-3">
+
+    <div class="pt-3 px-3">
+      <header class="hero-background">
+        <div class="text-overlay"></div>
+
+        <div class="text-container container">
+          <div class="row h-100 align-items-center py-5">
+            <div class="col-12 col-lg-8">
+
+              <div class="d-flex align-items-center mb-3">
+                <span class="d-inline-block me-2 rounded-pill"
+                  style="height: 4px; width: 32px; background-color: #ff6600;"></span>
+                <p class="text-warning text-uppercase fw-semibold mb-0"
+                  style="letter-spacing: 0.1em; font-size: 0.8rem;">
+                  ESSENTIAL QUESTION
+                </p>
+              </div>
+
+              <hgroup>
+                <h1 class="text-white display-3 fw-bolder lh-sm mb-4">
+                  How does Earth change over time?
+                </h1>
+              </hgroup>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="p-4 pt-0">
+      <section class="card-container-wrapper container">
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-11 offset-lg">
+            <div class="row g-4">
+              <article class="col-12 col-md-4">
+                <div class="card rounded-3 h-100">
+                  <img src="./sun.jpg" alt="Sunrise over exposed rock layers in a canyon" class="card-img-top"
+                    style="max-height: 150px; object-fit: cover;" />
+                  <div class="card-body p-4">
+                    <p class="card-text small text-dark fw-medium mb-0">
+                      Over time, wind and water expose layers of rock.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-12 col-md-4">
+                <div class="card rounded-3 h-100">
+                  <img src="./rock.jpg" alt="Wooden walkways inside a dark limestone cave" class="card-img-top"
+                    style="max-height: 150px; object-fit: cover;" />
+                  <div class="card-body p-4">
+                    <p class="card-text small text-dark fw-medium mb-0">
+                      Water helped dissolve limestone to form this cave.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-12 col-md-4">
+                <div class="card rounded-3 h-100">
+                  <img src="./mountain.jpg" alt="Lava erupting from a volcano with bright orange and yellow glow"
+                    class="card-img-top" style="max-height: 150px; object-fit: cover;" />
+                  <div class="card-body p-4">
+                    <p class="card-text small text-dark fw-medium mb-0">
+                      Volcanic eruptions can form mountains and islands over time.
+                    </p>
+                  </div>
+              </article>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container my-2">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+
+            <div class="d-flex align-items-center mb-3">
+              <h4 class="text-primary me-5 dropdown-toggle" id="knowledgeTermsTitle">
+                Knowledge Terms
+              </h4>
+
+              <div class="flex-grow-1">
+                <button class="btn btn-light w-100 text-start py-3" data-bs-toggle="collapse"
+                  data-bs-target="#collapseKnowledge" aria-expanded="false" aria-controls="collapseKnowledge"
+                  style="border: 1px solid #dee2e6; border-radius: 0.25rem; background-color: #d3d3f8">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Write what you already know about the Essential Question.</span>
+                    <span class="ms-auto" style="font-size: 1rem; line-height: 1;">&or;</span>
+                  </div>
+                </button>
+                <div class="collapse" id="collapseKnowledge">
+                  <div class="card card-body" style="border-top: none; border-radius: 0 0 0.25rem 0.25rem;">
+                    <textarea class="form-control" rows="3" placeholder="Enter your knowledge here..."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+              <h4 class="text-primary me-5 dropdown-toggle" id="vocabularyTermsTitle">
+                Vocabulary Terms
+              </h4>
+
+              <div class="flex-grow-1">
+                <button class="btn btn-light w-100 text-start py-3" data-bs-toggle="collapse"
+                  data-bs-target="#collapseVocabulary" aria-expanded="false" aria-controls="collapseVocabulary"
+                  style="border: 1px solid #dee2e6; border-radius: 0.25rem; background-color: #d3d3f8;">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Write down some questions you have.</span>
+                    <span class="ms-auto" style="font-size: 1rem; line-height: 1;">&or;</span>
+                  </div>
+                </button>
+                <div class="collapse" id="collapseVocabulary">
+                  <div class="card card-body" style="border-top: none; border-radius: 0 0 0.25rem 0.25rem;">
+                    <textarea class="form-control" rows="3" placeholder="Enter your questions here..."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
