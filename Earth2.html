@@ -55,9 +55,11 @@
 <body>
 
   <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">Earth's Changes Over Time</a>
-
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./logoo.webp" alt="Logo" style="height:20px; width:auto; margin-right:20px;">
+        Earth's Changes Over Time
+      </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -65,115 +67,123 @@
           </li>
         </ul>
       </div>
-
-      <div class="d-flex ms-auto">
-        <button class="btn btn-sm text-white-50" type="button" aria-label="Toggle Fullscreen">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M1.146 10.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L2.707 9H6.5a.5.5 0 0 1 0 1H1.5a.5.5 0 0 1-.354-.146zm8.146-8.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L13.293 7H9.5a.5.5 0 0 1 0-1h4.499a.5.5 0 0 1 .354.146z" />
-          </svg>
-        </button>
-      </div>
     </div>
   </nav>
 
-  <div class="container bg-white p-4 p-md-5 topic-selection-box mx-auto">
-    <div class="mb-2">
-      <p class="small fw-bold text-warning mb-1" style="color: #ff6600 !important; letter-spacing: 0.1em;">INDEPENDENT
-        READING</p>
-      <h2 class="display-6 fw-bolder text-dark">Choose a Topic!</h2>
-    </div>
+  <div class="container bg-white px-4 px-md-5 py-3 topic-selection-box mx-auto"
+    style="border: 1px solid #e6e6e6; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 8px;">
 
-    <div class="row g-4">
+    <div style="max-width: 1100px; margin: auto;">
+      <div class="align-items-center mb-2">
+        <div class="d-flex">
+          <span class="d-inline-block me-2 rounded-pill"
+            style="height: 10px; width: 30px; background-color: #ff6600;"></span>
+          <p class="text-gray text-uppercase fw-semibold mb-0" style="letter-spacing: 0.1em; font-size: 0.9rem;">
+            INDEPENDENT READING
+          </p>
+        </div>
+        <h2 class="display-7 fw-bolder text-dark">Choose a Topic!</h2>
+      </div>
 
-      <div class="col-12 col-md-4">
-        <div class="form-check d-flex align-items-center mb-2">
-          <input class="form-check-input me-2" type="checkbox" value="" id="wondersCheckbox" data-color="blue">
-          <label class="form-check-label fw-bold text-dark fs-5" for="wondersCheckbox">
+
+      <div class="row g-3 mt-2">
+        <div class="col-12 col-md-4">
+          <label class="fw-bold text-dark fs-5 d-flex align-items-center mb-2">
+            <input class="form-check-input me-2" type="checkbox">
             Natural Wonders
           </label>
+
+          <div class="mb-2">
+            <img src="./water.webp" class="img-fluid rounded-0" style="
+           width: 100%;
+           height: auto;
+           border-left: 10px solid #1b1bff;   
+           border-top: 2px solid #1b1bff;        
+           border-right: 2px solid #1b1bff;
+           border-bottom: 2px solid #1b1bff;
+           " alt="img">
+          </div>
+
+          <p class="fw-semibold text-dark mb-3" style="font-size: 1rem;">
+            Is Earth's tallest mountain at the bottom of the ocean?
+          </p>
         </div>
 
-        <div id="wonders-image" class="image-wrapper mb-2">
-          <img src="./water.webp" alt="A deep underwater view of coral or rocks." class="img-fluid rounded-0">
-        </div>
-
-        <p class="fw-semibold text-dark mb-4" style="font-size: 1rem;">Is Earth's tallest mountain at the bottom of the
-          ocean?</p>
-
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="form-check d-flex align-items-center mb-2">
-          <input class="form-check-input me-2" type="checkbox" value="" id="mysteriesCheckbox" data-color="red">
-          <label class="form-check-label fw-bold text-dark fs-5" for="mysteriesCheckbox">
+        <div class="col-12 col-md-4">
+          <label class="fw-bold text-dark fs-5 d-flex align-items-center mb-2">
+            <input class="form-check-input me-2" type="checkbox">
             Natural Mysteries
           </label>
+
+          <div class="mb-2">
+            <img src="./fossil.webp" class="img-fluid rounded-0" style="
+         width: 100%;
+         height: auto;
+         border-left: 10px solid #ff231b; 
+         border-top: 2px solid #d9534f;        
+         border-right: 2px solid #d9534f;
+         border-bottom: 2px solid #d9534f;
+          " alt="img">
+          </div>
+
+          <p class="fw-semibold text-dark mb-3" style="font-size: 1rem;">
+            Can these fossils unlock mysteries from the past?
+          </p>
         </div>
 
-        <div id="mysteries-image" class="image-wrapper mb-2">
-          <img src="./fossil.webp" alt="A close-up of a fossil embedded in rock." class="img-fluid rounded-0">
-        </div>
-
-        <p class="fw-semibold text-dark mb-4" style="font-size: 1rem;">Can these fossils unlock mysteries from the past?
-        </p>
-
-      </div>
-
-      <div class="col-12 col-md-4">
-        <div class="form-check d-flex align-items-center mb-2">
-          <input class="form-check-input me-2" type="checkbox" value="" id="hazardsCheckbox" data-color="magenta">
-          <label class="form-check-label fw-bold text-dark fs-5" for="hazardsCheckbox">
+        <div class="col-12 col-md-4">
+          <label class="fw-bold text-dark fs-5 d-flex align-items-center mb-2">
+            <input class="form-check-input me-2" type="checkbox">
             Natural Hazards
           </label>
+
+          <div class="mb-2">
+            <img src="./crack.webp" class="img-fluid rounded-0" style="
+           width: 100%;
+           height: auto;
+           border-left: 10px solid #7e1bff;   
+           border-top: 2px solid #7e1bff;        
+           border-right: 2px solid #7e1bff;
+           border-bottom: 2px solid #7e1bff;
+           " alt="img">
+          </div>
+
+          <p class="fw-semibold text-dark mb-3" style="font-size: 1rem;">
+            Is Earth's tallest mountain at the bottom of the ocean?
+          </p>
         </div>
 
-        <div id="hazards-image" class="image-wrapper mb-2">
-          <img src="./crack.webp" alt="A large crack in dry earth, possibly caused by an earthquake."
-            class="img-fluid rounded-0">
-        </div>
-
-        <p class="fw-semibold text-dark mb-4" style="font-size: 1rem;">Is Earth's tallest mountain at the bottom of the
-          ocean?</p>
       </div>
 
-
-      <div class="box my-1">
+      <div class="box my-2">
         <div class="row g-3">
-
           <div class="col-6 col-md-4 col-lg-2">
             <div class="cover-box">COVER</div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-2">
             <div class="cover-box">COVER</div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-2">
             <div class="cover-box">COVER</div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-2">
             <div class="cover-box">COVER</div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-2">
             <div class="cover-box">COVER</div>
           </div>
-
           <div class="col-6 col-md-4 col-lg-2">
             <div class="cover-box">COVER</div>
           </div>
-
         </div>
       </div>
+
     </div>
+  </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
